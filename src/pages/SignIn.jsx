@@ -1,9 +1,9 @@
 import React from "react";
+import "./Signin.css";
 import github from "../components/assets/github.svg";
 import twitter from "../components/assets/twitter.svg";
 import linkdin from "../components/assets/linkdin.svg";
 import discord from "../components/assets/discord.svg";
-import "./signin.css";
 import SigninForm from "../components/SigninForm";
 import { useFirebase } from "../Context/firebaseContext";
 
@@ -13,7 +13,7 @@ const SignIn = () => {
       <div className="header">
         <h2>LOGO</h2>
       </div>
-      <div className="left">
+      <div className="signin-left">
         <div className="board">
           <h1>Board.</h1>
         </div>

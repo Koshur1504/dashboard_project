@@ -36,10 +36,10 @@
       color: white;
     }
   }
-  & .left {
+  & .signin-left {
     flex: 1;
     flex-shrink: 1;
-    position: relative;
+    position: relative !important;
     height: 100%;
 
     & .board {
@@ -89,13 +89,13 @@
     /* position: relative; */
     width: 100vw;
 
-    .left {
+    .signin-left {
       &::before {
         display: none;
       }
     }
   }
-  .left {
+  .signin-left {
     padding-inline: 25px;
   }
   .right {
@@ -112,9 +112,9 @@
       width: 100%;
       transform: translateX(0);
     }
-
-    & .left {
+    & .signin-left {
       display: none;
+      background-color: red;
     }
   }
 }
