@@ -1,0 +1,110 @@
+.addprofile- {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  & .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    & img {
+      background-color: var(--color-whitesmoke-100);
+      border-radius: 50%;
+    }
+    & p {
+      color: #858585;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: var(--paragraph-text-md-s);
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+
+
+    }
+  }
+  & .profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+
+    height: 100%;
+    width: 100%;
+    gap: 26px;
+    & h3 {
+      color: #000;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: var(--paragraph-text-md-s);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 1000;
+      line-height: 24px; /* 100% */
+      
+    }
+    & .items {
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 100%;
+      display: flex;
+      /* flex-direction: column; */
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      gap: 10px;
+      /* flex-wrap: wrap; */
+      
+    & .topShelf , & .bottomShelf{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-block:5px;
+      flex-wrap: wrap;
+      
+      & p {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--light-bulma, #231f20);
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: var(--paragraph-text-md-s);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 171.429% */
+        text-decoration-line: underline;
+        white-space: nowrap;
+
+        & img {
+          display: flex;
+          width: 28px;
+          height: 28px;
+          padding: 5px 5px 6px 6px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 184px;
+          
+        }
+        & .phone {
+          background-color: #e9f9eb;
+        }
+        & .ig,
+        & .yt {
+          background-color: #ffe9ec;
+        }
+        & .mail {
+          background-color: #ebe6f9;
+        }
+      }
+    }
+      
+    }
+  }
+}

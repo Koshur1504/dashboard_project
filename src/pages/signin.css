@@ -1,0 +1,134 @@
+.signin {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: relative;
+  background-color: var(--color-ghostwhite);
+  isolation: isolate;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100vw;
+    transform: translateX(-50%);
+
+    background-image: url("../components/assets/blueback.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  & .header {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    padding: 40px 50px;
+    & h2 {
+      font-family: var(--font-poppins);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 122.687%;
+      letter-spacing: 0.36px;
+      color: white;
+    }
+  }
+  & .left {
+    flex: 1;
+    flex-shrink: 1;
+    position: relative;
+    height: 100%;
+
+    & .board {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    
+      & h1 {
+        color: #fff;
+        font-family: var(--font-montserrat);
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+    & .iconcontainer {
+      position: absolute;
+      bottom: 6.654%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10%;
+      justify-content: center;
+      & img {
+        width: 44px !important;
+        height: 44px !important;
+      }
+    }
+  }
+  & .right {
+    flex: 1;
+    flex-shrink: 1;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+
+    box-sizing: border-box;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .signin {
+    /* position: relative; */
+    width: 100vw;
+
+    .left {
+      &::before {
+        display: none;
+      }
+    }
+  }
+  .left {
+    padding-inline: 25px;
+  }
+  .right {
+    padding-inline: 25px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .signin {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    &::after {
+      width: 100%;
+      transform: translateX(0);
+    }
+
+    & .left {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .signin {
+    &::after {
+      background-size: auto;
+    }
+
+    & .header {
+      padding: 25px 0 0 25px;
+      /* width: fit-content; */
+
+      margin-inline: auto;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.signinform {
+  display: flex;
+  flex-direction: column;
+  margin-left: 14%;
+  /* display: none; */
+  /* justify-content: center; */
+  & h2 {
+    color: #000;
+    font-family: var(--font-montserrat);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  & h4 {
+    color: #000;
+    font-family: var(--font-lato);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 22px;
+  }
+  & .buttons {
+    display: flex;
+    margin-bottom: 22px;
+    gap: 10px;
+  }
+  & form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-goten);
+    border-radius: 20px;
+    padding: 25px 32.93px;
+    & input {
+      border-radius: 10px;
+      height: 40px;
+      background: var(--color-whitesmoke-100, #f5f5f5);
+      border: none;
+      padding: 10px 0px 12px 16px;
+      color: #000;
+      font-family: var(--font-lato);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 10px;
+      margin-bottom: 22px;
+      &::placeholder {
+        color: #000;
+        font-family: var(--font-lato);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    & label {
+      color: #000;
+      font-family: var(--font-lato);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    & a {
+      color: var(--link, #346bd4);
+      font-family: var(--font-lato);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      width: fit-content;
+      margin-bottom: 15px;
+      &:link {
+        text-decoration: none;
+      }
+    }
+  }
+  & > a {
+    color: var(--Secondary-Text, #858585);
+    text-align: center;
+    font-family: var(--font-lato);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+    &:link {
+      text-decoration: none;
+    }
+    & span {
+      color: var(--link);
+      font-family: var(--font-lato);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 12px;
+    }
+  }
+}
+
+.disabled {
+  /* pointer-events: none; */
+  cursor: not-allowed;
+  & :hover {
+    cursor: not-allowed;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .signinform {
+    margin-inline: auto;
+  }
+}
+ @media only screen and (max-width:750px) {
+  .signinform{
+    min-width: 350px;
+    & h2,h4 {
+      color: white;
+    }
+    & a{
+      color: white;
+      & span{
+        color: rgb(184, 185, 192);
+      }
+    }
+  }
+ }
+
+ @media only screen and (max-width:500px) {
+  
+ }

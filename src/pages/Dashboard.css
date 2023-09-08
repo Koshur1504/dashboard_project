@@ -1,0 +1,133 @@
+.dashboard {
+  background-color: var(--color-ghostwhite);
+  height: 100vh;
+  /* width: 100vw; */
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  display: relative;
+  /* & * {
+  overflow: hidden;
+ } */
+  & > .navigation {
+    flex-shrink: 0;
+  }
+  & .dashboard-right {
+    flex: 1;
+    padding-inline: 35px;
+    padding-block: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    & .cards {
+      display: flex;
+      gap: 15px;
+
+      width: 100%;
+      flex: 0.7;
+      flex-wrap: wrap;
+    }
+    & .activities {
+      width: 100%;
+      flex: 1.6;
+      min-height: 250px;
+    }
+    & .bottom {
+      display: flex;
+
+      gap: 15px;
+      width: 100%;
+
+      flex: 0.7;
+      flex-wrap: wrap;
+      & .topproducts {
+        flex: 1;
+        /* min-width: 350px; */
+        background-color: white;
+
+        border: 2px solid #e0e0e0;
+        border-radius: 21px;
+        padding: 20px 30px;
+      }
+      & .addprofile {
+        flex: 1;
+        padding: 20px 30px;
+        background-color: white;
+        /* min-width: 350px; */
+        border: 2px solid #e0e0e0;
+        border-radius: 21px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .dashboard {
+    & .navigation {
+      & .navbar {
+        padding-inline: max(25px, 3vw);
+      }
+    }
+    & .dashboard-right {
+      padding-inline: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .dashboard {
+    /* height: fit-content; */
+    .burger {
+      display: none;
+      position: absolute;
+     
+      z-index: 100;
+      top: 80px;
+      /* bottom: 35px; */
+      /* transform: translateY(-50%); */
+    }
+    .show {
+      display: block !important;
+    }
+    .burgerIcon {
+      display: block !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .dashboard {
+    height: auto;
+    min-height: 100vh;
+    & .dashboard-right {
+      /* & .cards {
+        overflow: hidden;
+      }
+      & .activities{
+        overflow: hidden;
+      }
+      & .bottom{
+        overflow: hidden;
+      } */
+
+      & .header {
+        & .search {
+          display: none;
+        }
+        & .bellIcon {
+          display: none;
+        }
+      }
+    }
+  }
+  .topproductchart > .legends{
+    
+    margin-right: 0px;
+  }
+}
+
+/* @media only screen and (max-width:450px) {
+  
+} */
