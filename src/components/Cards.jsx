@@ -7,7 +7,7 @@ import totalUsersIcon from "../components/assets/card_users.svg";
 
 const Cards = ({ data }) => {
   let { total_revenues, total_transactions, total_likes, total_users } = data;
-  console.log(total_revenues)
+  
 
   return (
     <>

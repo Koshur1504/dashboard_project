@@ -3,7 +3,7 @@ import "./Card.css";
 import arrow from "./assets/Arrow_down.svg";
 
 const Card = ({ icon, color, text, value, pvalue }) => {
-  console.log(value)
+  
   
   return (
     <div className="card">
